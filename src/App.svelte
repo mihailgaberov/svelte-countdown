@@ -99,7 +99,7 @@
 			align-items: center;
 			min-height: 100vh;
 	}
-	
+
 	/* display the content of the .stopwatch container in a column */
 	:global(.stopwatch) {
 			display: flex;
@@ -108,7 +108,7 @@
 	:global(.stopwatch > * + *) {
 			margin-top: 0.75rem;
 	}
-	
+
 	/* for devices supporting css grid */
 	@supports (display: grid) {
 			/* for larger viewports */
@@ -149,8 +149,8 @@
     <!-- pass the number of milliseconds to the stopwatch component -->
     <Stopwatch {lapse} />
     <!-- pass the array of laps to the laps component -->
-    <Laps {laps} />
-    <!-- following the events disaptched from the controls component call the start/pause/stop/lap function
+<!--    <Laps {laps} />-->
+    <!-- following the events dispatched from the controls component call the start/pause/stop/lap function
     pass the necessary booleans to display the correct button(s)
     -->
 	<Controls on:start={start} on:stop={stop} on:pause={pause} on:lap={lap} {subscription} {lapsed} />
