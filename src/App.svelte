@@ -45,45 +45,8 @@
         min-height: 100vh;
     }
 
-    /* display the content of the .stopwatch container in a column */
-    :global(.stopwatch) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 100%;
-    }
-
     :global(.stopwatch > * + *) {
         margin-top: 0.75rem;
-    }
-
-    /* for devices supporting css grid */
-    @supports (display: grid) {
-        /* for larger viewports */
-        @media (min-width: 600px) {
-            :global(.stopwatch) {
-                display: grid;
-                grid-gap: 20px 50px;
-                grid-template-columns: 300px 250px;
-                grid-template-rows: 225px auto;
-                grid-template-areas: "watch list" "watch controls";
-                justify-content: space-between;
-            }
-
-            :global(.stopwatch svg) {
-                grid-area: watch;
-                align-self: center;
-            }
-
-            :global(.stopwatch ul) {
-                grid-area: list;
-            }
-
-            :global(.stopwatch > * + *) {
-                margin-top: 0;
-            }
-        }
     }
 
 </style>
