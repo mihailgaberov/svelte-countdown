@@ -37,12 +37,17 @@
         background: hsl(0, 0%, 95%);
         color: hsl(0, 0%, 20%);
         font-family: "Open Sans", sans-serif;
-        /* center the .stopwatch container in the viewport */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+    }
+
+    :global(.stopwatch) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     :global(.stopwatch > * + *) {
