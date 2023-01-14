@@ -1,8 +1,7 @@
 <script>
     import { onDestroy } from 'svelte';
 	import Stopwatch from './Stopwatch.svelte';
-	import Laps from './Laps.svelte';
-	import Controls from './Controls.svelte';
+	import Title from './Title.svelte';
 
 	// import the number of milliseconds from the readable stores
 	import { time } from './stores.js';
@@ -147,11 +146,12 @@
 
 <div class="stopwatch">
     <!-- pass the number of milliseconds to the stopwatch component -->
+    <Title />
     <Stopwatch {lapse} />
     <!-- pass the array of laps to the laps component -->
 <!--    <Laps {laps} />-->
     <!-- following the events dispatched from the controls component call the start/pause/stop/lap function
     pass the necessary booleans to display the correct button(s)
     -->
-	<Controls on:start={start} on:stop={stop} on:pause={pause} on:lap={lap} {subscription} {lapsed} />
+<!--	<Controls on:start={start} on:stop={stop} on:pause={pause} on:lap={lap} {subscription} {lapsed} />-->
 </div>
