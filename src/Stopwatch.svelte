@@ -60,7 +60,7 @@
             <circle r="1" fill="none" stroke="currentColor" stroke-width="0.4"></circle>
         </g>
 
-        <text text-anchor="middle" fill="currentColor" dominant-baseline="middle" font-size="10" style="font-weight: 300; letter-spacing: 1px;">
+        <text text-anchor="middle" fill="currentColor" dominant-baseline="middle" font-size="7" style="font-weight: 300; letter-spacing: 1px;">
             {formatTime(lapse)}
         </text>
     </g>
