@@ -52,8 +52,6 @@
 
         <text text-anchor="middle" fill="currentColor" dominant-baseline="middle" font-size="7" style="font-weight: 300; letter-spacing: 1px;">
             {formatTime(lapse)}
-        </text>
-        <text text-anchor="middle" fill="currentColor" dominant-baseline="middle" font-size="7" style="font-weight: 300; letter-spacing: 1px;">
             DD:HH:MM:SS:s
         </text>
     </g>
