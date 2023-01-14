@@ -29,7 +29,7 @@
         color: lightgray;
         display: block;
         position: relative;
-        top: -40%;
+        top: -39%;
         letter-spacing: 0;
     }
 </style>
