@@ -24,6 +24,14 @@
         font-family: "Roboto Mono", monospace;
         color: hsl(0, 0%, 5%);
     }
+
+    .legend {
+        color: lightgray;
+        display: block;
+        position: relative;
+        top: -40%;
+        letter-spacing: 0;
+    }
 </style>
 <svg viewBox="0 0 100 100" width="300" height="300">
     <g transform="translate(50 50)">
@@ -52,7 +60,9 @@
 
         <text text-anchor="middle" fill="currentColor" dominant-baseline="middle" font-size="7" style="font-weight: 300; letter-spacing: 1px;">
             {formatTime(lapse)}
-            DD:HH:MM:SS:s
         </text>
     </g>
 </svg>
+<div class="legend">
+    days hours minutes seconds
+</div>
