@@ -1,7 +1,7 @@
 import { readable } from 'svelte/store';
 
 export const time = readable(0, function start(set) {
-	const countToThisDate = new Date('2023-03-26T18:25:00');
+	const countToThisDate = new Date('2024-03-26T18:25:00');
 	const endTime = countToThisDate.getTime();
 
 	const interval = setInterval(() => {
